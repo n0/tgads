@@ -1,0 +1,9 @@
+# Netscape HTTP Cookie File — export from a logged-in ads.telegram.org session.
+# Save your real version as ./cookies.txt (gitignored) or point TGADS_COOKIES at it.
+# Tab-separated: domain  includeSubdomains  path  secure  expiry  name  value
+.telegram.org	TRUE	/	TRUE	0	stel_acid	<your_stel_acid>
+.telegram.org	TRUE	/	FALSE	0	stel_ln	en
+ads.telegram.org	FALSE	/	TRUE	0	stel_ssid	<your_stel_ssid>
+ads.telegram.org	FALSE	/	TRUE	0	stel_token	<your_stel_token>
+ads.telegram.org	FALSE	/	TRUE	0	stel_dt	420
+ads.telegram.org	FALSE	/	TRUE	0	stel_adowner	<your_owner_id>

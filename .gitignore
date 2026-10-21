@@ -1,0 +1,59 @@
+# --- secrets / session state (NEVER commit) ---
+cookies.txt
+*.cookies
+*cookies*.txt
+!examples/cookies.txt.example
+.hash
+.cache/
+secrets.json
+
+# --- node / typescript ---
+node_modules/
+dist/
+*.tsbuildinfo
+.pnpm-store/
+
+# --- python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# --- scratch / recon artifacts ---
+*.html
+!docs/swagger-ui.html
+promote.js
+main-aj.js
+sim.json
+*_state.json
+.playwright-mcp/
+page-*.png
+ads-*.png
+
+# --- OS / editor ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# harness session state
+.claude/
+
+# Local credentials, exports, and release artifacts
+.env.*
+!.env.example
+*.session
+*.session-journal
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+*.tgz
+*.whl
+release/

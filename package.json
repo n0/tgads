@@ -1,0 +1,16 @@
+{
+  "name": "tgads-workspace",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Telegram Ads account control and reporting for agents: Python CLI and typed Node client.",
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "docs:format": "prettier --write \"**/*.md\"",
+    "docs:check": "prettier --check \"**/*.md\""
+  },
+  "devDependencies": {
+    "prettier": "3.8.1"
+  }
+}

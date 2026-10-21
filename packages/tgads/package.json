@@ -1,0 +1,50 @@
+{
+  "name": "tgads",
+  "version": "0.1.0",
+  "description": "Fully-typed Node client for the (unofficial, reverse-engineered) Telegram Ads platform API at ads.telegram.org.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "telegram",
+    "ads",
+    "api",
+    "client",
+    "advertising",
+    "automation"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "clean": "rm -rf dist",
+    "prepack": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n0/tgads.git",
+    "directory": "packages/tgads"
+  },
+  "homepage": "https://github.com/n0/tgads#readme",
+  "bugs": {
+    "url": "https://github.com/n0/tgads/issues"
+  }
+}
